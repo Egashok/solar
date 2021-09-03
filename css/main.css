@@ -1,0 +1,131 @@
+body {
+  font-family: "Noto Sans",sans-serif;
+}
+
+.container {
+  padding: 0 360px;
+}
+
+.header {
+  background: no-repeat url(../img/main.png);
+  background-size: contain contain;
+  background-position: center center;
+  min-height: 900px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .logo__img {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 140px;
+}
+
+.header__abtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.header__title {
+  font-size: 64px;
+  line-height: 87px;
+  font-variant: small-caps;
+  color: #FFFFFF;
+}
+
+.header__untitle {
+  font-size: 42px;
+  line-height: 57px;
+  color: #FFFFFF;
+}
+
+.header__button {
+  position: relative;
+  top: 142px;
+  right: 120px;
+}
+
+.header__social {
+  margin-bottom: 40px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.header__social img {
+  padding: 0 10px;
+}
+
+.artit {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding-top: 100px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #868585;
+}
+
+.service {
+  padding: 150px 0;
+}
+
+.service__wrapper {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.service__img {
+  background: no-repeat url(../img/service.png);
+  margin-left: 90px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.service__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.service__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.service__info-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #303030;
+}
+
+.service__info-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #303030;
+}
+
+.service__item {
+  padding-bottom: 50px;
+}

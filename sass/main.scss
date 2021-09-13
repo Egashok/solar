@@ -6,11 +6,13 @@ body{
 }
 .header{
     background:no-repeat url(../img/main.png);
-    background-size: contain contain ;
+
     background-position:center center ;
     min-height: 900px;
     text-align: center;
-    display: flex;
+    display: flex;;
+    background-size: cover;
+    text-align: center;
     flex-direction:  column;
     .logo__img{
         text-align: center;
@@ -81,7 +83,9 @@ body{
         &__img{
             background: no-repeat url(../img/service.png);
            margin-left: 90px;
+       
             flex: 1 1 50%;
+            height: 100vh;
             img{
                 object-fit: contain;
                 width: 100%;

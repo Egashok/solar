@@ -95,7 +95,7 @@ body{
     color: #868585;
 }
 .service{
-        padding: 150px 0;
+       margin-top: 150px ;
         &__wrapper{
             padding-top:60px ;
             display: flex;
@@ -236,7 +236,7 @@ body{
     }
 }
 .client{
-    padding-top: 150px;
+    margin-top: 150px;
     &__button{
         padding-left: 50px;
         svg{
@@ -259,7 +259,7 @@ body{
     }
     &__slider{
         width: 510px;
-        height: 370px;
+        max-height: 370px;
         margin-right: 90px;
     }
     &__img{
@@ -287,7 +287,7 @@ body{
 }
 .step{
     padding-bottom: 150px;
-    padding-top: 150px;
+  
     &__img{
         max-width: 600px;
         min-height: 730px;
@@ -410,6 +410,7 @@ footer{
 
 
 }
+
 .info__tabs-content{
 .slick-arrow{
     position: absolute;
@@ -508,15 +509,47 @@ fill: #A9A32A
   
 }
 
-@media (max-width: 1024px) {
-    header,
+@media (max-width: 1224px) {
+    .client__img{
+        width: 100%;
+    }
+    .client__slider{
+        width: 100%;
+      img{
+        width: 100%;
+        max-height: 370px;
+      }
+     
+    }
+    .client__inner{
+        flex-direction: column;      
+     
+    }
+    .client__info-title{
+       max-width: 100%;
+       padding-top: 50px;
+    }
+    .client__slider{
+        .slick-arrow{
+            bottom: -330px;
+        }
+        
+    }
+    .client__button{
+        position: relative;
+        top: -50px;
+        
+    }
+
+
+    
     .service,
     .client,
     .info,
-    .citata,
+ 
     .step,
-    .footer__top{
-        padding-top: 75px;
+    footer{
+        margin-top: 75px;
         padding-bottom: 0px;
 
     }
@@ -531,6 +564,7 @@ fill: #A9A32A
 .service__info{
     flex-basis: 100%;
 }
+
 }
 @media (max-width: 375px) {
 
@@ -540,12 +574,13 @@ fill: #A9A32A
     .service__box{
         margin-bottom: 30px;
     }
+    
 
 }
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
 
     .info__inner{
-        
+        padding-bottom: 70px;
         flex-direction: column-reverse;
 
     }
@@ -623,4 +658,130 @@ fill: #A9A32A
     padding: 10px;
 }
 
+}
+@media (max-width: 768px) {
+    
+    .citata{
+        
+        background: no-repeat url("../img/citata.png");
+    
+        min-height: 300px;
+    }
+
+    
+    .citata__title{
+font-size: 28px;
+line-height: 32px;
+padding-bottom: 100px;
+
+
+
+    }
+
+
+
+}
+@media (max-width: 375px) {
+
+    .citata__title{
+        font-size: 22px;
+        line-height: 28px;
+        
+        padding-bottom: 50px;
+        padding-top:50px ;
+            }
+            
+            .citata{
+        
+                background: no-repeat url("../img/citata.png");
+            
+                max-height: 200px;
+            }
+}
+
+@media (max-width: 450px) {
+.client__slider{
+ .slick-right{
+            left: calc(50% + 30px);
+            bottom: -500px;
+        }
+        .slick-left{
+            left: calc(50% - 30px);
+            bottom: -500px;
+        }
+
+    }
+    .client__button{
+        display: block;
+        width: 350px;
+        left: 20px;
+        padding: 0;
+        position: relative;
+    }
+}
+@media (max-width: 951px) {
+   
+    .step__inner{
+        flex-direction: column;
+        img{
+            min-height: 200px;
+        }
+    }
+    .step__img{
+    max-width: 100%;
+    max-height: 350px;
+    min-height: 350px;
+    }
+  
+ 
+
+}
+@media (max-width: 878px) {
+.foot__text{
+    font-size: 15px;
+    padding: 5px 0;
+}
+.foot__bot{
+    margin-bottom: 10px;
+}
+.foot__top{
+flex-direction: column;
+}
+.foot__title
+{
+    margin: 10px 0;
+}
+.foot__appli{
+    input{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+}
+@media (max-width: 450px) {
+.foot__bot{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    .logo{
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    .foot__link{
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+.foot__social{
+    text-align: center;
+    flex: 1 1 100%;
+}
+.foot__appli{
+    input{
+        margin-bottom: 10px;
+    }
+}
 }

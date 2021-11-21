@@ -1,6 +1,14 @@
 @charset "UTF-8";
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -684,6 +692,18 @@ footer {
   .foot__bot .foot__link {
     flex: 1 1 100%;
     text-align: center;
+  }
+
+  .foot__button {
+    position: relative;
+    left: -20px;
+    top: -20px;
+  }
+
+  .foot__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
   }
 
   .foot__social {

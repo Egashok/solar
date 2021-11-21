@@ -1,8 +1,17 @@
+
+html{
+   
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     font-family: "Noto Sans",sans-serif;
-    overflow-x:hidden;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+   
 }
-
 .social{
     img{
         padding: 0 10px;
@@ -773,6 +782,16 @@ flex-direction: column;
         flex: 1 1 100%;
         text-align: center;
     }
+}
+.foot__button{
+    position: relative;
+    left: -20px;
+    top: -20px;
+}
+.foot__title{
+    font-size: 18px;
+        line-height: 23px;
+        margin: 0;
 }
 
 .foot__social{

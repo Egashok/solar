@@ -297,6 +297,7 @@ body {
 footer {
   background: no-repeat url("../img/foot.png");
   min-height: 730px;
+  background-size:cover;
 }
 
 .foot__top {
